@@ -1,6 +1,11 @@
 # vue-test
 
 > A Vue.js project
+## Vue 小知识
+*  图表e-charts
+*  图片懒加载
+*  promise
+*  keep-alive+魔法注释
 
 ## Build Setup
 

@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {},
 
     // Various Dev Server settings
-    host: '172.16.17.30', // can be overwritten by process.env.HOST
+    host: '172.16.17.58', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
@@ -41,6 +41,15 @@ module.exports = {
     cacheBusting: true,
 
     cssSourceMap: true
+  },
+  proxyTable: {
+    '/api': {
+      target: 'http://api.map.baidu.com/api/', // http://172.16.20.56:8081/activity
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': ''
+      }
+    }
   },
 
   build: {

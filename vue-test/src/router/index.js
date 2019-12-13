@@ -46,6 +46,16 @@ export default new Router({
       path: '/mychart',
       name: 'mychart',
       component: () => import(/* webpackChunkName: "mychart" */ '@/components/chart.vue')
+    },
+    {
+      path: '/promise',
+      name: 'promise',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/promise.vue')
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/map.vue')
     }
   ]
 })

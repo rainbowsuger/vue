@@ -1,12 +1,6 @@
 <template>
 <div>
-  <div>
-    <span @click="renderLine('bar')">柱状图</span>
-    <span @click="renderLine('line')">折线图</span>
-    <span @click="renderLine('pie')">饼图</span>
-    <span @click="renderLine('scatter')">散点图</span>
-    <div ref="chartLine" class="block-line"></div>
-  </div>
+  <div ref="chartLine" class="block-line"></div>
 </div>
 </template>
 <script>

@@ -24,6 +24,9 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
+  externals: {
+    'BMap': 'BMap'
+  },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -35,9 +38,10 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
+
   module: {
     rules: [
       ...(config.dev.useEslint ? [createLintingRule()] : []),
