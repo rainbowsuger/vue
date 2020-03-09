@@ -55,7 +55,17 @@ export default new Router({
     {
       path: '/map',
       name: 'map',
-      component: () => import(/* webpackChunkName: "promise" */ '@/views/map.vue')
+      component: () => import(/* webpackChunkName: "map" */ '@/views/map.vue')
+    },
+    {
+      path: '/canvas',
+      name: 'canvas',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/canvas.vue')
+    },
+    {
+      path: '/cropper',
+      name: 'cropper',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/cropper.vue')
     }
   ]
 })

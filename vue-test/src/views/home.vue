@@ -6,10 +6,13 @@
     <router-link  to="/route1">keep-alive</router-link>
     <router-link  to="/promise">Promise</router-link>
     <router-link  to="/map">地图</router-link>
+    <router-link  to="/canvas">canvas</router-link>
+    <router-link  to="/cropper">cropper</router-link>
   </div>
 </template>
 
 <script>
+import './model/observer'
 export default {
   name: 'Home'
 }
