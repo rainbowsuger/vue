@@ -88,14 +88,17 @@ export default {
         return false
       }
       let reader = new FileReader()
+      console.log(reader)
       reader.onload = e => {
         let data
+        console.log(e)
         if (typeof e.target.result === 'object') {
           // 把Array Buffer转化为blob 如果是base64不需要
           data = window.URL.createObjectURL(new Blob([e.target.result]))
         } else {
           data = e.target.result
         }
+        console.log(11, data)
         if (num === 1) {
           _this.option.img = data
         }
@@ -106,6 +109,7 @@ export default {
       reader.readAsArrayBuffer(file)
     },
     realTime (data) {
+      console.log(data)
       this.previews = data
     }
   }
