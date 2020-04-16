@@ -1,3 +1,6 @@
+<!--
+    百度地图
+-->
 /**坑：BMap未定义
 <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=9bnaPNvv0vVrOMGxeZuxNGK5NI3Lhihg"></script>在index.html中引入
 2.webpack中设置:

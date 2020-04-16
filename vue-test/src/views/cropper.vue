@@ -1,3 +1,7 @@
+
+<!--
+    图片剪裁
+-->
 <template>
     <Modal v-model="cutPicture" :maskClosable="false" :closable="false" title="图片裁剪" :width="710">
         <div class="avatar-container">

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/imgLazy'
+import HelloWorld from '@/views/guide'
 import Route1 from '@/components/route1'
 import Route2 from '@/components/route2'
 

@@ -1,22 +1,94 @@
+
 <template>
-  <div>
-    <router-link  to="/mychart">图表</router-link>
-    <router-link  to="/guide">引导图</router-link>
-    <router-link  to="/knowledge">小知识</router-link>
-    <router-link  to="/route1">keep-alive</router-link>
-    <router-link  to="/promise">Promise</router-link>
-    <router-link  to="/map">地图</router-link>
-    <router-link  to="/canvas">canvas</router-link>
-    <router-link  to="/cropper">cropper</router-link>
+  <div class="container">
+    <div  class="block-tabs">
+      <div v-for="(item, index) in tabsList" :key="index" style="width: 32vw;" @click="gotoItem(item)">
+        <Icon :type="item.icon" color="#dca855" size="16"/>
+        <div class="title">{{item.title}}</div>
+        <div style="color: #9e9ca1;">{{item.label}}</div>
+      </div>
+    </div>
   </div>
 </template>
-
 <script>
-import './model/observer'
+import { Icon } from 'view-design'
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Icon
+  },
+  data () {
+    return {
+      tabsList: [
+        {
+          title: '图表',
+          icon: 'ios-baseball',
+          label: 'echarts图表',
+          url: '/mychart'
+        },
+        {
+          title: '引导图',
+          icon: 'ios-arrow-dropup-circle',
+          label: 'vue-lazyload懒加载',
+          url: '/guide'
+        },
+        {
+          title: '小知识',
+          icon: 'ios-arrow-dropup-circle',
+          label: 'ES语法',
+          url: '/mychart'
+        },
+        {
+          title: 'keep-alive',
+          icon: 'ios-analytics',
+          label: 'keepAlive本地缓存',
+          url: '/route1'
+        },
+        {
+          title: 'Promise',
+          icon: 'ios-analytics',
+          label: 'keepAlive本地缓存',
+          url: '/Promise'
+        },
+        {
+          title: '地图',
+          icon: 'ios-analytics',
+          label: '百度地图',
+          url: '/map'
+        },
+        {
+          title: 'canvas',
+          icon: 'ios-analytics',
+          label: 'canvas绘制签名',
+          url: '/canvas'
+        },
+        {
+          title: '图片剪裁',
+          icon: 'ios-analytics',
+          label: 'vue-cropper图片剪裁',
+          url: '/canvas'
+        }
+      ]
+    }
+  },
+  methods: {
+    gotoItem (item) {
+      this.$router.push({ path: item.url })
+    }
+  }
 }
 </script>
-
-<style>
+<style lang="less" scoped>
+.container {
+  .block-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+    .title {
+      font-size: 14px;
+    }
+  }
+}
 </style>

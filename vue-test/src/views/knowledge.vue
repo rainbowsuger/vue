@@ -1,3 +1,6 @@
+<!--
+    ES6语法练习
+-->
 <template>
 <div class="knowledge-container">
     <div class="items-block">

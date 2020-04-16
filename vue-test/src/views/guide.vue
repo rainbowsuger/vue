@@ -1,5 +1,8 @@
-// 新手图片式引导
-// 加了图片懒加载，上一步下一步置底
+
+<!--
+    新手图片式引导
+    加了图片懒加载，上一步下一步置底
+-->
 <template>
   <div class="lead-page-container">
     <div class="lead-page-modal"
