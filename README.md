@@ -4,5 +4,7 @@
 * 路由跳转缓存
   > keepalive
 * knowledge
-* mcanvas插件[未完成]
-* echarts插件
+* mcanvas 绘制签名/canvas
+* 封装echarts/echarts
+* 图片裁剪/cropper
+* 百度地图图 /map
