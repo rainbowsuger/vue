@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <div  class="block-tabs">
-      <div v-for="(item, index) in tabsList" :key="index" style="width: 32vw;" @click="gotoItem(item)">
+      <div v-for="(item, index) in tabsList" :key="index" style="width: 30vw; margin: 10px 0;" @click="gotoItem(item)">
         <Icon :type="item.icon" color="#dca855" size="16"/>
         <div class="title">{{item.title}}</div>
         <div style="color: #9e9ca1;">{{item.label}}</div>
@@ -36,7 +36,7 @@ export default {
           title: '小知识',
           icon: 'ios-arrow-dropup-circle',
           label: 'ES语法',
-          url: '/mychart'
+          url: '/knowledge'
         },
         {
           title: 'keep-alive',
@@ -47,7 +47,7 @@ export default {
         {
           title: 'Promise',
           icon: 'ios-analytics',
-          label: 'keepAlive本地缓存',
+          label: '---待写---',
           url: '/Promise'
         },
         {
@@ -66,7 +66,13 @@ export default {
           title: '图片剪裁',
           icon: 'ios-analytics',
           label: 'vue-cropper图片剪裁',
-          url: '/canvas'
+          url: '/cropper'
+        },
+        {
+          title: 'echarts',
+          icon: 'ios-arrow-dropup-circle',
+          label: 'echarts再封装',
+          url: '/echarts'
         }
       ]
     }

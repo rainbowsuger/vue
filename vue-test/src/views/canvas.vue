@@ -6,11 +6,11 @@
     保存、重置功能
 -->
 <template>
-<div class="block-canvas" :width="width" :height="height">
+<div class="block-canvas">
   <a :href="href" download="canvas" @click="save">保存</a>
   <span @click="reset">重置</span>
-  <canvas v-if='show' id="bubble1" :width="width" :height="height" @touchstart="drawH5" ></canvas>
-  <canvas v-else id="bubble2" :width="width" :height="height" @mousedown="drawPc" ></canvas>
+  <canvas v-if='show' id="bubble1" :width="width" :height="height-100" @touchstart="drawH5" ></canvas>
+  <canvas v-else id="bubble2" :width="width" :height="height-100" @mousedown="drawPc" ></canvas>
 </div>
 </template>
 
@@ -111,5 +111,6 @@ export default {
 <style scoped>
 .block-canvas{
   background: #eee;
+  overflow: hidden;
 }
 </style>

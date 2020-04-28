@@ -45,7 +45,7 @@ export default new Router({
     {
       path: '/mychart',
       name: 'mychart',
-      component: () => import(/* webpackChunkName: "mychart" */ '@/components/chart.vue')
+      component: () => import(/* webpackChunkName: "mychart" */ '@/views/chart.vue')
     },
     {
       path: '/promise',
@@ -66,6 +66,11 @@ export default new Router({
       path: '/cropper',
       name: 'cropper',
       component: () => import(/* webpackChunkName: "promise" */ '@/views/cropper.vue')
+    },
+    {
+      path: '/echarts',
+      name: 'echarts',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/echarts.vue')
     }
   ]
 })

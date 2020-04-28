@@ -6,6 +6,7 @@
 </div>
 </template>
 <script>
+// 正常路由this.$router.back()，route1执行created，当设置keep-alive后route1不执行
 export default{
   name: 'route1',
   data () {
