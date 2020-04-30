@@ -73,6 +73,12 @@ export default {
           icon: 'ios-arrow-dropup-circle',
           label: 'echarts再封装',
           url: '/echarts'
+        },
+        {
+          title: '防抖和节流',
+          icon: 'ios-analytics',
+          label: '防抖和节流实践',
+          url: '/debounceThrottle'
         }
       ]
     }

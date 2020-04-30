@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/views/guide'
+import HelloWorld from '@/views/components/guide'
 import Route1 from '@/components/route1'
 import Route2 from '@/components/route2'
 
@@ -35,7 +35,7 @@ export default new Router({
     {
       path: '/knowledge',
       name: 'knowledge',
-      component: () => import(/* webpackChunkName: "knowledge" */ '@/views/knowledge.vue')
+      component: () => import(/* webpackChunkName: "knowledge" */ '@/views/components/knowledge.vue')
     },
     {
       path: '/mcanvas',
@@ -45,32 +45,37 @@ export default new Router({
     {
       path: '/mychart',
       name: 'mychart',
-      component: () => import(/* webpackChunkName: "mychart" */ '@/views/chart.vue')
+      component: () => import(/* webpackChunkName: "mychart" */ '@/views/components/chart.vue')
     },
     {
       path: '/promise',
       name: 'promise',
-      component: () => import(/* webpackChunkName: "promise" */ '@/views/promise.vue')
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/promise.vue')
     },
     {
       path: '/map',
       name: 'map',
-      component: () => import(/* webpackChunkName: "map" */ '@/views/map.vue')
+      component: () => import(/* webpackChunkName: "map" */ '@/views/components/map.vue')
     },
     {
       path: '/canvas',
       name: 'canvas',
-      component: () => import(/* webpackChunkName: "promise" */ '@/views/canvas.vue')
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/canvas.vue')
     },
     {
       path: '/cropper',
       name: 'cropper',
-      component: () => import(/* webpackChunkName: "promise" */ '@/views/cropper.vue')
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/cropper.vue')
     },
     {
       path: '/echarts',
       name: 'echarts',
-      component: () => import(/* webpackChunkName: "promise" */ '@/views/echarts.vue')
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/echarts.vue')
+    },
+    {
+      path: '/debounceThrottle',
+      name: 'debounceAndthrottle',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/debounceAndthrottle.vue')
     }
   ]
 })
