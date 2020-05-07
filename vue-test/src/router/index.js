@@ -76,6 +76,11 @@ export default new Router({
       path: '/debounceThrottle',
       name: 'debounceAndthrottle',
       component: () => import(/* webpackChunkName: "promise" */ '@/views/components/debounceAndthrottle.vue')
+    },
+    {
+      path: '/vuex',
+      name: 'vuex',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/vuex.vue')
     }
   ]
 })

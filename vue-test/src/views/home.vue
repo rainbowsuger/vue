@@ -79,6 +79,12 @@ export default {
           icon: 'ios-analytics',
           label: '防抖和节流实践',
           url: '/debounceThrottle'
+        },
+        {
+          title: 'vuex',
+          icon: 'ios-analytics',
+          label: '核心store（仓库）',
+          url: '/vuex'
         }
       ]
     }
