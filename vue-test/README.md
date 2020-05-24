@@ -2,10 +2,17 @@
 
 > A Vue.js project
 ## Vue 小知识
-*  图表e-charts
+
 *  图片懒加载
 *  promise
 *  keep-alive+魔法注释
+*  封装local
+*  鼠标移动
+*  canvas签名档
+*  echarts应用的封装
+*  图片裁剪
+*  百度地图
+*  防抖和节流
 
 ## Build Setup
 

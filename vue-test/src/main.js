@@ -8,6 +8,7 @@ import VueLazyload from 'vue-lazyload'
 import 'view-design/dist/styles/iview.css'
 import '@/libs/init'
 import Vuex from 'vuex'
+import './plugins/local'
 
 Vue.use(Vuex)
 Vue.use(VueLazyload)
