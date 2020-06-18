@@ -57,10 +57,16 @@ export default {
           url: '/map'
         },
         {
-          title: 'canvas',
+          title: 'signature',
           icon: 'ios-analytics',
-          label: 'canvas绘制签名',
-          url: '/canvas'
+          label: 'signature设置签名',
+          url: '/signature'
+        },
+        {
+          title: 'mcanvas',
+          icon: 'ios-analytics',
+          label: '图片加水印',
+          url: '/mcanvas'
         },
         {
           title: '图片剪裁',
@@ -97,6 +103,7 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+@import '~@/assets/style/index.less';
 .container {
   .block-tabs {
     display: flex;
@@ -104,6 +111,7 @@ export default {
     text-align: center;
     font-size: 12px;
     margin: 10px;
+    color: @primay-color;
     .title {
       font-size: 14px;
     }

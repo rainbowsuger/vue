@@ -16,6 +16,7 @@
 
 <script type="text/ecmascript-6">
 export default {
+  name: 'signature',
   data () {
     return {
       width: document.documentElement.clientWidth,

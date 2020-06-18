@@ -40,7 +40,7 @@ export default new Router({
     {
       path: '/mcanvas',
       name: 'mcanvas',
-      component: () => import(/* webpackChunkName: "mcanvas" */ '@/components/mcanvas.vue')
+      component: () => import(/* webpackChunkName: "mcanvas" */ '@/views/components/mcanvas.vue')
     },
     {
       path: '/mychart',
@@ -58,9 +58,9 @@ export default new Router({
       component: () => import(/* webpackChunkName: "map" */ '@/views/components/map.vue')
     },
     {
-      path: '/canvas',
-      name: 'canvas',
-      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/canvas.vue')
+      path: '/signature',
+      name: 'signature',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/signature.vue')
     },
     {
       path: '/cropper',
