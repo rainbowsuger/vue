@@ -91,6 +91,12 @@ export default {
           icon: 'ios-analytics',
           label: '核心store（仓库）',
           url: '/vuex'
+        },
+        {
+          title: 'viewer',
+          icon: 'ios-analytics',
+          label: '图片预览',
+          url: '/viewer'
         }
       ]
     }

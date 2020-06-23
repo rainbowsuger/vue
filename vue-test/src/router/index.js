@@ -81,6 +81,11 @@ export default new Router({
       path: '/vuex',
       name: 'vuex',
       component: () => import(/* webpackChunkName: "promise" */ '@/views/components/vuex.vue')
+    },
+    {
+      path: '/viewer',
+      name: 'viewer',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/viewer.vue')
     }
   ]
 })
