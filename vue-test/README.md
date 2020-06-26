@@ -13,6 +13,9 @@
 *  图片裁剪
 *  百度地图
 *  防抖和节流
+*  viewer图片预览
+*  mcanvas加水印
+*  vuex应用
 
 ## Build Setup
 
