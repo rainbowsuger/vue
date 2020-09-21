@@ -97,6 +97,12 @@ export default {
           icon: 'ios-analytics',
           label: '图片预览',
           url: '/viewer'
+        },
+        {
+          title: 'aboutTs',
+          icon: 'ios-analytics',
+          label: 'ts炉火纯青',
+          url: '/aboutTs'
         }
       ]
     }
