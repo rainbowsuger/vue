@@ -1,0 +1,67 @@
+{
+  "spaceName": "Lemon",
+  "id": "th-form",
+  "name": {
+    "myForm": {
+      "myselect2": 1
+    }
+  },
+  "children": [{
+    "label": "文本框",
+    "id": "th-input",
+    "name": {
+      "myText": "文本框"
+    }
+  }, {
+    "label": "选择框",
+    "id": "th-select",
+    "name": {
+      "mySelect": "选择框"
+    },
+    "sourceType": "changeless",
+    "source": {
+      "sourceList": [{"label": "苹果", "value": "Apple"}, {"label": "鸟🐦", "value": "bird"}]
+    }
+  }, {
+    "id": "th-select",
+    "label": "选项",
+    "name": {
+      "myselect2": "myselect2"
+    },
+    "sourceType": "require",
+    "source": {
+      "name": "list",
+      "method": "get",
+      "url": "/shop-config/app-version/get-app-versions-enum",
+      "apiConfig": { "useResNestedFormat": true },
+      "fass": "(res) => {if (res) {const { appTypeList = [] } = res || {};return (appTypeList || []).map((item) => {return {label: item.desc,value: item.code};});}"
+      }
+    },
+  {
+    "operate": {
+      "name": "reset",
+      "type": "reset",
+      "field": {
+        "sourceList": [{"label": "男生", "value": "female"}, {"label": "女生", "value": "male"}],
+        "myText": 2
+      }
+    }
+  },
+  {
+    "operate": {
+      "name": "list",
+      "type": "search"
+    }
+  },
+  {
+    "operate": {
+      "name": "operate",
+      "type": "submit",
+      "action": {
+        "method": "get",
+        "url": "/shop-config/app-version/get-app-versions-enum",
+        "fass": "(res) => {if (res) {}}"
+      }
+    }
+  }]
+}
