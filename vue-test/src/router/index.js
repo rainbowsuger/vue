@@ -91,6 +91,11 @@ export default new Router({
       path: '/aboutTs',
       name: 'aboutTs',
       component: () => import(/* webpackChunkName: "promise" */ '@/views/typeScript/aboutTs.vue')
+    },
+    {
+      path: '/vuedraggable',
+      name: 'vuedraggable',
+      component: () => import(/* webpackChunkName: "promise" */ '@/views/components/vuedraggable.vue')
     }
   ]
 })

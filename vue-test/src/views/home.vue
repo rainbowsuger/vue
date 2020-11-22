@@ -103,6 +103,12 @@ export default {
           icon: 'ios-analytics',
           label: 'ts炉火纯青',
           url: '/aboutTs'
+        },
+        {
+          title: 'vuedraggable',
+          icon: 'ios-analytics',
+          label: '拖拽',
+          url: '/vuedraggable'
         }
       ]
     }
