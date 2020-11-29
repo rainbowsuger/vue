@@ -7,10 +7,10 @@
 
  // 简单文件读取
  let fs = require('fs');
- fs.readFile('text.tex', (err, data) => {
+ fs.readFile('text.txt', (err, data) => {
      if(err) throw err;
      console.log('读取到的文件 ==', data.toString()); // 返回buffer：<Buffer e7 ae 80 e5 8d 95 e6 96 87 e4 bb b6 e5 86 99 e5 85 a5>
-     fs.writeFile('text2.tex', data, (err) => {
+     fs.writeFile('text2.txt', data, (err) => {
         if(err) throw err;
          console.log("文件写入成功")
      })

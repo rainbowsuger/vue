@@ -11,7 +11,7 @@
  */
 
  let fs = require('fs');
- fs.writeFile('text.tex', "简单文件写入", { flag: 'a' }, (err) => {
+ fs.writeFile('text.txt', "简单文件写入", { flag: 'a' }, (err) => {
      if(err) throw err;
      console.log("简单文件写入成功")
  })

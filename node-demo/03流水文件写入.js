@@ -6,7 +6,7 @@
  let fs = require('fs');
  // 流式文件写入，创建可读/可写流
  // fs.createWriteStream(path[, options])
- let ws = fs.createWriteStream('text1.tex')
+ let ws = fs.createWriteStream('text1.txt')
  // 目前可读/可写流一直打开，可以通过流的open/close事件来监听流的打开和关闭，提高性能问题。
 
  ws.once('open', () => {
