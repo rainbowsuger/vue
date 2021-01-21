@@ -33,6 +33,12 @@ export default {
           url: '/guide'
         },
         {
+          title: '新手引导',
+          icon: 'ios-arrow-dropup-circle',
+          label: 'driver第三方库',
+          url: '/guide2'
+        },
+        {
           title: '小知识',
           icon: 'ios-arrow-dropup-circle',
           label: 'ES语法',

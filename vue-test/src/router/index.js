@@ -20,6 +20,12 @@ export default new Router({
       meta: {title: '新手引导'},
       component: HelloWorld
     },
+    {
+      path: '/guide2',
+      name: 'driver',
+      meta: {title: '新手引导'},
+      component: () => import(/* webpackChunkName: "knowledge" */ '@/views/components/02guide.vue')
+    },
     // 若有设置keepAlive=true，本页面缓存起来,返回back，路由跳转时不会执行create生命周期
     {
       path: '/route1',
