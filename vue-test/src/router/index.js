@@ -6,7 +6,7 @@ import Route2 from '@/components/route2'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -105,3 +105,12 @@ export default new Router({
     }
   ]
 })
+
+// next()后代码会不会执行：会。
+router.beforeEach((to, from, next) => {
+  next()
+  console.log('我执行了吗？')
+  console.log('哈哈哈 执行了')
+})
+
+export default router

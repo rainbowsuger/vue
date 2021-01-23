@@ -18,7 +18,6 @@
     "echarts": "^4.2.1",
     "kkcc-echarts": "https://github.com/rainbowsuger/kkcc_echarts.git",
     "kkcc-viewer": "^1.0.2",
-    "lemon": "git+ssh://git@gitlab.tuhu.cn:tuhushop/web/boss/lemon.git#lemon-v1",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "mcanvas": "^1.3.9",
