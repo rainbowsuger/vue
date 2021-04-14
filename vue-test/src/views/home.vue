@@ -33,11 +33,18 @@ export default {
           url: '/guide'
         },
         {
+          title: '新手引导',
+          icon: 'ios-arrow-dropup-circle',
+          label: 'driver第三方库',
+          url: '/guide2'
+        },
+        {
           title: '小知识',
           icon: 'ios-arrow-dropup-circle',
           label: 'ES语法',
           url: '/knowledge'
         },
+        // 这种方式可能会存在数据不刷新的问题，可以使用官网推荐includes=['name']
         {
           title: 'keep-alive',
           icon: 'ios-analytics',

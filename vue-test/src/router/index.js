@@ -6,7 +6,7 @@ import Route2 from '@/components/route2'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -19,6 +19,12 @@ export default new Router({
       name: 'lazyImg',
       meta: {title: '新手引导'},
       component: HelloWorld
+    },
+    {
+      path: '/guide2',
+      name: 'driver',
+      meta: {title: '新手引导'},
+      component: () => import(/* webpackChunkName: "knowledge" */ '@/views/components/02guide.vue')
     },
     // 若有设置keepAlive=true，本页面缓存起来,返回back，路由跳转时不会执行create生命周期
     {
@@ -99,3 +105,12 @@ export default new Router({
     }
   ]
 })
+
+// next()后代码会不会执行：会。
+router.beforeEach((to, from, next) => {
+  next()
+  console.log('我执行了吗？')
+  console.log('哈哈哈 执行了')
+})
+
+export default router
