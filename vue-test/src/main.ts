@@ -16,6 +16,18 @@ const store = createStore()
 Vue.config.productionTip = false
 Vue.prototype.HOST = '/api'
 
+var EventBus = new Vue()
+
+Object.defineProperties(Vue.prototype, {
+  $bus: {
+    get: function () {
+        return EventBus
+    }
+  }
+})
+
+Vue.prototype.$bus.$emit('test', '数据总线值')
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

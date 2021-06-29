@@ -39,6 +39,11 @@ const router = new Router({
       component: Route2
     },
     {
+      path: '/route3',
+      name: 'route3',
+      component: () => import('@/components/route3.vue')
+    },
+    {
       path: '/knowledge',
       name: 'knowledge',
       component: () => import(/* webpackChunkName: "knowledge" */ '@/views/components/knowledge.vue')
@@ -109,8 +114,7 @@ const router = new Router({
 // next()后代码会不会执行：会。
 router.beforeEach((to, from, next) => {
   next()
-  console.log('我执行了吗？')
-  console.log('哈哈哈 执行了')
+  console.log('router.beforeEach ====', 'next()之后得我执行了')
 })
 
 export default router
