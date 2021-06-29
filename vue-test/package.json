@@ -31,7 +31,9 @@
     "vue-property-decorator": "^9.0.0",
     "vue-router": "^3.0.1",
     "vuedraggable": "^2.24.3",
-    "vuex": "^3.3.0"
+    "vuex": "^3.3.0",
+    "codemirror": "^5.61.1",
+    "diff-match-patch": "^1.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
